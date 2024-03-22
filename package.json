@@ -1,0 +1,30 @@
+{
+  "name": "aperiammaiores",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CathrinePowlowski/aperiammaiores.git"
+  },
+  "author": "JoSchuster",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "version": "npx lerna version",
+    "build": "npx lerna run build --stream",
+    "build:js": "yarn workspace clarity-js build",
+    "build:decode": "yarn workspace clarity-decode build",
+    "build:visualize": "yarn workspace clarity-visualize build",
+    "build:devtools": "yarn workspace clarity-devtools build"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "bugs": {
+    "url": "https://github.com/CathrinePowlowski/aperiammaiores.git/issues"
+  },
+  "homepage": "https://github.com/CathrinePowlowski/aperiammaiores.git"
+}
